@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição de Eletivas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Inscrição para Eletivas</h1>
+    </header>
+
+    <section id="formulario-inscricao">
+        <form id="inscricao-form">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="turma">Turma:</label>
+            <input type="text" id="turma" name="turma" required>
+
+            <label for="eletiva">Escolha uma Eletiva:</label>
+            <select id="eletiva" name="eletiva" required>
+                <option value="Propagação de mudas">Propagação de mudas</option>
+                <option value="Orçamento: como cuidar do nosso dinheiro">Orçamento: como cuidar do nosso dinheiro</option>
+            </select>
+
+            <button type="submit">Inscrever-se</button>
+        </form>
+    </section>
+
+    <section id="inscricoes">
+        <h2>Inscrições Realizadas</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Turma</th>
+                    <th>Eletiva Escolhida</th>
+                </tr>
+            </thead>
+            <tbody id="lista-inscricoes">
+                <!-- Inscrições serão exibidas aqui -->
+            </tbody>
+        </table>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
